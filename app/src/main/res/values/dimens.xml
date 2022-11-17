@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding_space">16dp</dimen>
+    <dimen name="default_margin_space">10dp</dimen>
+    <dimen name="button_size">50sp</dimen>
+    <dimen name="text_area_height">60dp</dimen>
+    <dimen name="text_size1">50sp</dimen>
+    <dimen name="text_size2">30sp</dimen>
+    <dimen name="button_height">120dp</dimen>
+    <dimen name="layout_padding">8dp</dimen>
+    <dimen name="space">5dp</dimen>
+    <dimen name="corner_Radius">100dp</dimen>
+    <dimen name="layout_width">0dp</dimen>
+
+
+</resources>

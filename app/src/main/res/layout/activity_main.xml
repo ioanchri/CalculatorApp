@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    tools:context=".MainActivity">
+
+
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_area_height"
+            android:textSize="@dimen/text_size1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="right"
+            />
+
+        <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_area_height"
+            android:textColor="@color/hint"
+            android:textColorHint="@color/expressions"
+            android:textSize="@dimen/text_size2"
+            android:gravity="right"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonClear"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="A/C"
+            android:textSize="@dimen/button_size"
+            android:onClick="allClear"
+            app:cornerRadius="@dimen/corner_Radius"
+            app:rippleColor="@color/expressions"/>
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="⌫"
+            android:textSize="@dimen/button_size"
+            app:cornerRadius="@dimen/corner_Radius"
+            app:rippleColor="@color/expressions"/>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDevide"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/expressions"
+            android:text="÷"
+            android:textSize="@dimen/button_size"
+            app:cornerRadius="@dimen/corner_Radius"
+            app:rippleColor="@color/black"
+            >
+        </com.google.android.material.button.MaterialButton>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button7"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="7"
+            android:textSize="@dimen/button_size"
+            app:cornerRadius="@dimen/corner_Radius"
+            app:rippleColor="@color/expressions">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button8"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="8"
+            android:textSize="@dimen/button_size"
+            app:cornerRadius="@dimen/corner_Radius"
+            app:rippleColor="@color/expressions">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button9"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="9"
+            android:textSize="@dimen/button_size"
+            app:cornerRadius="@dimen/corner_Radius"
+            app:rippleColor="@color/expressions">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMultiply"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/expressions"
+            android:text="*"
+            android:textSize="@dimen/button_size"
+            app:cornerRadius="@dimen/corner_Radius"
+            app:rippleColor="@color/black"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="4"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"
+            />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button5"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="5"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"/>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button6"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="6"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"/>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMinus"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/expressions"
+            android:text="-"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/black"
+            app:cornerRadius="@dimen/corner_Radius"
+
+            />
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="1"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"
+            />
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="2"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"
+
+            />
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="3"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"
+            android:textSize="@dimen/button_size" />
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonPlus"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/expressions"
+            android:text="+"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/black"
+            app:cornerRadius="@dimen/corner_Radius"/>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDecimal"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="."
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"/>
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button0"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/black"
+            android:text="0"
+            android:textSize="@dimen/button_size"
+            app:rippleColor="@color/expressions"
+            app:cornerRadius="@dimen/corner_Radius"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="@dimen/space" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEqual"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="@dimen/button_height"
+            android:backgroundTint="@color/expressions"
+            android:text="="
+            android:textSize="@dimen/button_size"
+            android:onClick="result"
+            app:rippleColor="@color/black"
+            app:cornerRadius="@dimen/corner_Radius"/>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space" />
+    </LinearLayout>
+
+
+</LinearLayout>
