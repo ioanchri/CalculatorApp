@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,3 +48,4 @@ dependencies {
     apply plugin: 'kotlin-android-extensions'
     implementation 'net.objecthunter:exp4j:0.4.8'
 }
+

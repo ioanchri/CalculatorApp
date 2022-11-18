@@ -8,7 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="expressions">#B89034</color>
-    <color name="Background">#0C0A0A</color>
+    <color name="Background">#000000</color>
     <color name="hint">#80FDFDFD</color>
     <color name="icon">#CC6B6B</color>
+    <color name="numbers">#E8333131</color>
 </resources>

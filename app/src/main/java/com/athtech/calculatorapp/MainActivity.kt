@@ -9,7 +9,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -22,15 +21,14 @@ class MainActivity : AppCompatActivity() {
         super.onPostCreate(savedInstanceState)
 
 
+        var results = findViewById<TextView>(R.id.tvResult)
+        var expressions = findViewById<TextView>(R.id.tvExpression)
         /* ******** Numbers ********** */
 
         var button0 = findViewById<Button>(R.id.button0)
         button0.setOnClickListener {
             evaluateExpression("0", clear = true)
-            Log.d("App", "The user pressed a button")
-            Toast.makeText(this, "button 0 clicked", Toast.LENGTH_SHORT).show()
         }
-
 
         var button1 = findViewById<Button>(R.id.button1)
         button1.setOnClickListener {
@@ -80,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
         var decimal = findViewById<Button>(R.id.buttonDecimal)
         decimal.setOnClickListener {
-           evaluateExpression(".", clear = true)
+            evaluateExpression(".", clear = true)
 
         }
 
@@ -119,11 +117,18 @@ class MainActivity : AppCompatActivity() {
 
         var delete = findViewById<Button>(R.id.buttonDelete)
         delete.setOnClickListener {
+
             val text = tvExpression.text.toString()
-            if(text.isNotEmpty()) {
+            if (text.isNotEmpty()) {
                 tvExpression.text = text.dropLast(1)
             }
             tvResult.text = ""
+        }
+
+        var buttonClear = findViewById<Button>(R.id.buttonClear)
+        buttonClear.setOnClickListener {
+            expressions.text = ""
+            results.text = ""
         }
 
     }
@@ -139,13 +144,6 @@ class MainActivity : AppCompatActivity() {
             tvExpression.append(string)
             tvResult.text = ""
         }
-    }
-
-
-
-    fun allClear(view: View) {
-        tvResult.text = ""
-        tvExpression.text = ""
     }
 
 
