@@ -11,6 +11,8 @@
     <dimen name="space">5dp</dimen>
     <dimen name="corner_Radius">100dp</dimen>
     <dimen name="layout_width">0dp</dimen>
+    <dimen name="image_width_height">200dp</dimen>
+    <dimen name="image_margin">150dp</dimen>
 
 
 </resources>
