@@ -98,8 +98,7 @@
             android:text="@string/_7"
             android:textSize="@dimen/button_size"
             app:cornerRadius="@dimen/corner_Radius"
-            app:rippleColor="@color/expressions"/>
-
+            app:rippleColor="@color/expressions" />
 
 
         <Space
@@ -116,7 +115,7 @@
             android:text="@string/_8"
             android:textSize="@dimen/button_size"
             app:cornerRadius="@dimen/corner_Radius"
-            app:rippleColor="@color/expressions"/>
+            app:rippleColor="@color/expressions" />
 
 
         <Space
@@ -134,7 +133,6 @@
             android:textSize="@dimen/button_size"
             app:cornerRadius="@dimen/corner_Radius"
             app:rippleColor="@color/expressions" />
-
 
 
         <Space
